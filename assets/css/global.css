@@ -1,0 +1,1011 @@
+@font-face {
+  font-family: 'FuturaHeavy';
+  font-style: normal;
+  src: url("../fonts/FuturaStd-Heavy.ttf") format("truetype"), url("../fonts/FuturaStd-Heavy.woff") format("woff"), url("../fonts/FuturaStd-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  font-style: normal;
+  src: url("../fonts/FuturaStd-Bold.otf");
+}
+
+@font-face {
+  font-family: 'FuturaBook';
+  font-style: normal;
+  src: url("../fonts/FuturaStd-Book.ttf") format("truetype"), url("../fonts/FuturaStd-Book.woff") format("woff"), url("../fonts/FuturaStd-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'FuturaLight';
+  font-style: normal;
+  src: url("../fonts/FuturaLightRegular.otf");
+}
+
+@font-face {
+  font-family: 'FuturaStdLight';
+  font-style: normal;
+  src: url("../fonts/FuturaStd-Light.otf");
+}
+
+@-webkit-keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.main_container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_container div#home_information {
+  background-color: #FBEFCE;
+  width: 65%;
+  position: relative;
+}
+
+.main_container div#home_information .home_information_container {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  left: 90px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main_container div#home_information .home_information_container .content_container {
+  width: 70%;
+  height: 90%;
+  margin: auto;
+  color: #535060;
+}
+
+.main_container div#home_information .home_information_container .content_container .logo {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.main_container div#home_information .home_information_container .content_container .phone {
+  height: 40px;
+  font-family: 'FuturaBook';
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.main_container div#home_information .home_information_container .content_container .phone p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main_container div#home_information .home_information_container .content_container .adress {
+  height: 40px;
+  font-family: 'FuturaBook';
+  font-size: 20px;
+  margin-top: -30px;
+  margin-bottom: 25px;
+}
+
+.main_container div#home_information .home_information_container .content_container .adress p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main_container div#home_information .home_information_container .content_container .hours {
+  height: 40px;
+  font-family: 'FuturaBook';
+  font-size: 20px;
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
+
+.main_container div#home_information .home_information_container .content_container .hours p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main_container div#home_information .home_information_container .content_container .social_media {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-right: 30px;
+}
+
+.main_container div#home_information .home_information_container .button_container {
+  width: 30%;
+  height: 70%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (60px)[4];
+      grid-template-rows: repeat(4, 60px);
+  gap: 1rem;
+  padding-top: 25px;
+}
+
+.main_container div#home_information .home_information_container .button_container .menu_btn {
+  background: #535060;
+  z-index: 3000000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 65px;
+}
+
+.main_container div#home_information .home_information_container .button_container .menu_btn svg {
+  margin: auto;
+}
+
+.main_container div#home_information .home_information_container .button_container .menu_btn:hover {
+  cursor: pointer;
+}
+
+.main_container div#home_information .home_information_container .button_container .show_home {
+  font-family: 'FuturaBook';
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #535060;
+  color: #FBEFCE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_container div#home_information .home_information_container .button_container .show_home span {
+  color: white;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .show_home::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-101%, -50%);
+          transform: translate(-101%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #DB6856;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1), -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .show_home:hover::before {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.main_container div#home_information .home_information_container .button_container .deliveroo {
+  padding: 12px 24px;
+  background-color: #535060;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_container div#home_information .home_information_container .button_container .deliveroo svg {
+  color: #4BC5B7;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .deliveroo::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-101%, -50%);
+          transform: translate(-101%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #4BC5B7;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1), -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .deliveroo:hover::before {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.main_container div#home_information .home_information_container .button_container .uberEats {
+  padding: 12px 24px;
+  background-color: #535060;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_container div#home_information .home_information_container .button_container .uberEats svg {
+  color: black;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+  -webkit-transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .uberEats::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-101%, -50%);
+          transform: translate(-101%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1), -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .uberEats:hover::before {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.main_container div#home_information .home_information_container .button_container .justEat {
+  padding: 12px 24px;
+  background-color: #535060;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_container div#home_information .home_information_container .button_container .justEat svg {
+  color: #FF8000;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+  -webkit-transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .justEat::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-101%, -50%);
+          transform: translate(-101%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #FF8000;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1), -webkit-transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.main_container div#home_information .home_information_container .button_container .justEat:hover::before {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.main_container div#home_map {
+  background-image: url("../../assets/img/last_resize.png");
+  background-color: #282828;
+  background-repeat: no-repeat;
+  width: 35%;
+}
+
+.main_container div#main_sidebar_container {
+  background-color: #FBEFCE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  width: 20%;
+}
+
+.main_container div#main_sidebar_container .sidebar_logo {
+  padding: 5px;
+  height: 20%;
+  -webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+          animation: slide-in-blurred-left 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.main_container div#main_sidebar_container .sidebar_logo svg {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu {
+  color: #535060;
+  font-family: 'FuturaBook';
+  font-weight: 500;
+  font-size: 18px;
+  height: 45%;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu ul {
+  padding: 0;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu ul li {
+  list-style-type: none;
+  height: 60px;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu ul li .sidebar_list_item {
+  height: 100%;
+  padding: 20px 0px 20px 17px;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu ul li .sidebar_list_item:hover {
+  background-color: #DB6856;
+  cursor: pointer;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu ul li .sidebar_list_item.selected {
+  background-color: #DB6856;
+  cursor: pointer;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70px;
+  margin-top: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu .social_media .icon_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.main_container div#main_sidebar_container .sidebar_menu .social_media span {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #535060;
+  font-family: 'FuturaBook';
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .phone {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .phone p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .adress {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .adress p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .hours {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .hours p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main_container div#main_sidebar_container .sidebar_footer .social_media span {
+  text-align: center;
+}
+
+.main_container div#main_menu_container {
+  background-color: #DB6856;
+  width: 35%;
+  z-index: 1000;
+  padding: 0;
+}
+
+.main_container div#main_menu_container .menu_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.main_container div#main_menu_container .menu_main .menu_main_header {
+  height: 21vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "FuturaBold";
+  color: #535060;
+  text-align: center;
+  font-size: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.main_container div#main_menu_container .menu_main .menu_main_header p {
+  margin: 0;
+  padding: 30px 10px;
+  font-size: 40px;
+}
+
+.main_container div#main_menu_container .menu_main .menu_main_list {
+  height: 80%;
+  margin: 0;
+  color: #FBEFCE;
+  margin-top: 14px;
+  font-family: 'FuturaBook';
+  padding: 0;
+  overflow: scroll;
+}
+
+.main_container div#main_menu_container .menu_main .menu_main_list li {
+  list-style-type: none;
+  height: 60px;
+}
+
+.main_container div#main_menu_container .menu_main .menu_main_list li .menu_main_list_item {
+  height: 100%;
+  padding: 20px 17px 20px 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container div#main_menu_container .menu_main .menu_main_list li .menu_main_list_item:hover {
+  background-color: #535060;
+  cursor: pointer;
+}
+
+.main_container div#main_menu_container .menu_main .menu_main_list li .menu_main_list_item.selected {
+  background-color: #535060;
+  cursor: pointer;
+}
+
+.main_container div#main_product_container {
+  background-color: #535060;
+  width: 45%;
+  position: relative;
+  padding: 0;
+}
+
+.main_container div#main_product_container .product_main {
+  width: 100%;
+  height: 80vh;
+}
+
+.main_container div#main_product_container .product_main .product_details_header {
+  height: 20%;
+  font-family: "FuturaBold";
+  color: #FBEFCE;
+  font-size: 40px;
+  padding: 50px 15px 10px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container div#main_product_container .product_main .product_details_header span {
+  margin: auto auto;
+}
+
+.main_container div#main_product_container .product_main .product_details_content {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: -145px;
+  margin-right: 10px;
+}
+
+.main_container div#main_product_container .product_main .product_details_content img {
+  border-radius: 50% !important;
+}
+
+.main_container div#main_product_container .product_main .product_details_content .product_img {
+  width: 80%;
+  height: 120%;
+  border-radius: 50%;
+}
+
+.main_container div#main_product_container .product_main .product_details_content .product_img div {
+  width: 600px;
+  height: 600px;
+}
+
+.main_container div#main_product_container .product_main .product_details_content .product_description {
+  font-family: 'FuturaBook';
+  color: #FBEFCE;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_container div#main_product_container .product_main .product_details_content .product_description .product_composition {
+  font-size: 23px;
+  text-align: right;
+}
+
+.main_container div#main_product_container .product_main .product_details_content .product_description .product_price {
+  margin-top: 25%;
+  margin-left: 40%;
+  font-size: 25px;
+  text-align: end;
+}
+
+.main_container div#main_product_container .product_main .extras_list_container {
+  height: 80%;
+}
+
+.main_container div#main_product_container .product_main .extras_list_container ul {
+  padding-top: 50px;
+  padding-left: 28px;
+  color: #FBEFCE;
+}
+
+.main_container div#main_product_container .product_main .extras_list_container ul li {
+  list-style: none;
+  font-family: "FuturaBook";
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.main_container div#main_product_container .product_footer {
+  width: 100%;
+  height: 20vh;
+}
+
+.main_container .mobile_main_container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.main_container .mobile_main_container .mobile_header {
+  min-height: 250px;
+  background-color: #FBEFCE;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'FuturaBook';
+  color: #535060;
+}
+
+.main_container .mobile_main_container .mobile_header p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.main_container .mobile_main_container .mobile_header .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.main_container .mobile_main_container #slogan {
+  background-color: #FBEFCE;
+  color: #535060;
+  text-align: center;
+  margin: 0px 0 30px 0;
+  font-family: "FuturaBold";
+  font-size: 17px;
+}
+
+.main_container .mobile_main_container .mobile_menu .MuiTouchRipple-rippleVisible {
+  color: #005d83 !important;
+}
+
+.main_container .mobile_main_container .mobile_menu .mobile_menu_list {
+  width: 100%;
+  padding: 0px;
+  font-family: 'FuturaBook' !important;
+  padding-bottom: 70px;
+  background-color: #FBEFCE;
+}
+
+.main_container .mobile_main_container .mobile_menu .mobile_menu_category {
+  height: 100px;
+  background-color: #DB6856;
+  border-top: 1px solid #535060;
+}
+
+.main_container .mobile_main_container .mobile_menu .mobile_menu_category .category_name {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 94%;
+}
+
+.main_container .mobile_main_container .mobile_menu .mobile_menu_category .category_name span {
+  font-family: 'FuturaBook' !important;
+  font-size: 22px;
+  color: #FBEFCE;
+  letter-spacing: -0.34px;
+  text-align: center;
+}
+
+.main_container .mobile_main_container .product_list {
+  padding: 8px 0;
+  background-color: #535060;
+}
+
+.main_container .mobile_main_container .mobile_menu_products {
+  background-color: #535060;
+  color: #FBEFCE;
+  min-height: 95px;
+}
+
+.main_container .mobile_main_container .mobile_menu_products .mobile_menu_products_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_container .mobile_main_container .mobile_menu_products .mobile_menu_products_content .product_img {
+  margin-right: 10px;
+}
+
+.main_container .mobile_main_container .mobile_menu_products .mobile_menu_products_content .product_infos .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container .mobile_main_container .mobile_menu_products .mobile_menu_products_content .product_infos .description {
+  font-size: 12px;
+  font-family: 'FuturaLight';
+  font-style: oblique;
+}
+
+.main_container .mobile_main_container .order_btn_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.main_container .mobile_main_container .order_btn_container .btn_order {
+  width: 100%;
+  font-family: 'FuturaBook';
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0;
+  border: none;
+  color: #FBEFCE;
+  background: #dcb05b;
+}
+
+.drawer_menu_order {
+  background-color: transparent;
+}
+
+.drawer_menu_order .mobile_order_menu {
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_header {
+  width: 100%;
+  font-family: "FuturaBook";
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0;
+  border: none;
+  color: #FBEFCE;
+  background: #dcb05b;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main {
+  background: #dcb05b;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 auto;
+          flex: 3 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main a {
+  width: 90%;
+  margin-bottom: 12px;
+  height: 50px;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .menu_btn_mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .collect {
+  background-color: #535060;
+  color: #FBEFCE;
+  font-size: 24px;
+  font-family: 'FuturaBold';
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .deliveroo {
+  background-color: #4BC5B7;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .deliveroo svg {
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .uberEats {
+  background-color: black;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .uberEats svg {
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .justEat {
+  background-color: #FF8000;
+}
+
+.drawer_menu_order .mobile_order_menu .mobile_order_main .justEat svg {
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+/*# sourceMappingURL=global.css.map */
