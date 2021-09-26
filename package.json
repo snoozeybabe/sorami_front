@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "concurrently \"next start\" \"cd ../sorami_site && yarn start\""
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "axios": "^0.21.1",
     "classnames": "^2.3.0",
+    "concurrently": "^6.2.1",
     "jotai": "^0.16.0",
     "moment": "^2.29.1",
     "next": "10.0.9",
